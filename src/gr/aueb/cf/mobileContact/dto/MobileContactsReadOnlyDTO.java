@@ -9,11 +9,15 @@ public class MobileContactsReadOnlyDTO extends BaseDTO{
     public MobileContactsReadOnlyDTO(){}
 
 
-    public MobileContactsReadOnlyDTO(String firstname, String lastname, String phoneNumber) {
+
+    public MobileContactsReadOnlyDTO(Long id, String firstname, String lastname, String phoneNumber) {
+        setId(id);
         this.firstname = firstname;
         this.lastname = lastname;
         this.phoneNumber = phoneNumber;
     }
+
+
 
     public String getFirstname() {
         return firstname;

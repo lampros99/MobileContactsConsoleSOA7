@@ -8,7 +8,8 @@ public class MobileContactUpdateDTO extends BaseDTO {
     public MobileContactUpdateDTO(){}
 
 
-    public MobileContactUpdateDTO(String firstname, String lastname, String phoneNumber) {
+    public MobileContactUpdateDTO(Long id, String firstname, String lastname, String phoneNumber) {
+        setId(id);
         this.firstname = firstname;
         this.lastname = lastname;
         this.phoneNumber = phoneNumber;
